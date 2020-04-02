@@ -1,0 +1,229 @@
+@import "http://fonts.fontstorage.com/import/poiret.css";
+@import "http://fonts.fontstorage.com/import/bebasneue.css";
+@import "reset.css";
+html, body {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Poiret One", serif;
+  overflow: hidden;
+}
+
+body {
+  background: url("../img/background.jpg");
+  background-size: cover;
+}
+
+.container {
+  width: 1369px !important;
+  max-width: 1369px !important;
+  padding: 0 !important;
+}
+
+.navigation {
+  margin-top: 15px;
+}
+
+.navigation__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation__link {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.08em;
+  color: #F0F0F0;
+}
+.navigation__link:before, .navigation__link:after {
+  content: "";
+  position: absolute;
+  transition: transform 0.5s ease;
+}
+.navigation__link:hover, .navigation__link:focus {
+  text-decoration: none;
+  color: #fff;
+}
+.navigation__link:before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #03F7DB, #03AADB);
+  transform: translateX(-101%);
+}
+.navigation__link:hover:before {
+  transform: translateX(0);
+}
+
+.navigation__logo {
+  width: 80px;
+}
+
+.heading__h1 {
+  margin: 30px auto 20px auto;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 52px;
+  letter-spacing: 0.08rem;
+  text-align: center;
+}
+
+.services {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.service {
+  position: relative;
+  width: 24%;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #262929;
+  transition: 0.5s;
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+.service svg {
+  margin-bottom: 20px;
+}
+.service:hover, .service:focus {
+  background: linear-gradient(90deg, #ff005e, #fbff00);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  padding-top: 14px;
+  padding-bottom: 30px;
+  justify-content: space-around;
+}
+.service:hover .service__heading, .service:focus .service__heading {
+  color: #262929;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.service:hover svg, .service:focus svg {
+  margin-bottom: 10px;
+  width: 45px;
+  height: 45px;
+}
+.service:hover svg path, .service:focus svg path {
+  fill: #262929;
+}
+.service:hover .service__description, .service:focus .service__description {
+  display: flex;
+  margin-bottom: 20px;
+  transition: all 0.4s ease;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.service:hover .service__arrow, .service:focus .service__arrow {
+  display: flex;
+  transition: all 0.4s ease;
+}
+
+.service__description {
+  text-align: center;
+  color: #262929;
+  font-size: 16px;
+  display: none;
+}
+
+.service__arrow {
+  display: none;
+}
+
+.service:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  background: #fff;
+  z-index: -1;
+  border-radius: 2px;
+}
+
+.service:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(40px);
+  border-radius: 2px;
+}
+
+.service:before,
+.service:after {
+  background: linear-gradient(-215deg, #03F5DB, #333333, #02AEE1);
+}
+
+.service:hover:before, .service:hover:after {
+  background: linear-gradient(-215deg, #ff005e, #fbff00);
+}
+
+.service__heading {
+  font-family: "Poiret One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.copyright, .policy, .developers {
+  color: #C0C0C0;
+  font-size: 16px;
+}
+
+.policy {
+  padding-top: 0;
+}
+.policy:hover, .policy:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__phone a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=main.css.map */
