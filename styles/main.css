@@ -16,12 +16,6 @@ body {
   background-size: cover;
 }
 
-.container {
-  width: 1369px !important;
-  max-width: 1369px !important;
-  padding: 0 !important;
-}
-
 .navigation {
   margin-top: 15px;
 }
@@ -81,7 +75,7 @@ body {
 }
 
 .heading__h1 {
-  margin: 30px auto 20px auto;
+  margin: 50px auto 40px auto;
   font-family: "Bebas Neue", cursive;
   font-weight: 400;
   font-size: 52px;
@@ -101,7 +95,7 @@ body {
 .service {
   position: relative;
   width: 24%;
-  height: 220px;
+  height: 180px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,9 +112,9 @@ body {
   background: linear-gradient(90deg, #ff005e, #fbff00);
   transition: all 0.4s ease;
   cursor: pointer;
-  padding-top: 14px;
-  padding-bottom: 30px;
-  justify-content: space-around;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  justify-content: center;
 }
 .service:hover .service__heading, .service:focus .service__heading {
   color: #262929;
@@ -128,7 +122,7 @@ body {
   margin-bottom: 10px;
 }
 .service:hover svg, .service:focus svg {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   width: 45px;
   height: 45px;
 }
@@ -137,7 +131,7 @@ body {
 }
 .service:hover .service__description, .service:focus .service__description {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   transition: all 0.4s ease;
   font-weight: 600;
   line-height: 1.25;
@@ -206,8 +200,17 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 15px;
+  align-items: flex-end;
+  margin-top: 30px;
+}
+
+.footer__phone, .footer__copyright-and-policy, .footer__address, .footer__developers {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.footer__phone a, .footer__phone p, .footer__copyright-and-policy a, .footer__copyright-and-policy p, .footer__address a, .footer__address p, .footer__developers a, .footer__developers p {
+  line-height: 1.2;
 }
 
 .copyright, .policy, .developers {
@@ -217,16 +220,22 @@ body {
 
 .policy {
   padding-top: 0;
+  padding-bottom: 0;
 }
 .policy:hover, .policy:focus {
   color: #fff;
   text-decoration: none;
 }
 
+.copyright {
+  margin-bottom: 10px;
+}
+
 .footer__phone a {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
+  padding: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
