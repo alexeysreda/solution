@@ -114,7 +114,7 @@ body {
     justify-content: center;
     align-items: center;
     //margin: 40px;
-    background: #262929;
+    background-color: #303030;
     transition: 0.5s;
     margin-bottom: 20px;
     border-radius: 2px;
@@ -127,7 +127,7 @@ body {
     }
 
     &:hover, &:focus {
-        background: linear-gradient(-215deg, #ff005e, #fbff00);
+        background: linear-gradient(-215deg, #CC00FF, #FAFF00);
         transition: all 0.4s ease;
         cursor: pointer;
         padding-top: 5px;
@@ -216,7 +216,7 @@ body {
 }
 
 .service:hover:before, .service:hover:after {
-    background:linear-gradient(-215deg, #ff005e, #fbff00);
+    background:linear-gradient(-215deg, #CC00FF, #FAFF00);
 }
 
 
@@ -230,12 +230,18 @@ body {
     text-transform: uppercase;
 }
 
+main {
+    padding-bottom: 30px;
+}
+
 .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: 30px;
+
+
+
 
 }
 
