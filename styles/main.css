@@ -109,7 +109,7 @@ body {
   margin-bottom: 20px;
 }
 .service:hover, .service:focus {
-  background: linear-gradient(90deg, #ff005e, #fbff00);
+  background: linear-gradient(-215deg, #ff005e, #fbff00);
   transition: all 0.4s ease;
   cursor: pointer;
   padding-top: 5px;
