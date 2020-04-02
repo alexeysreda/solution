@@ -132,19 +132,23 @@ body {
         cursor: pointer;
         padding-top: 5px;
         padding-bottom: 10px;
-        justify-content: center;
+        justify-content: space-around;
         & .service__heading {
             color: #262929;
             //transition: all 0.4s ease;
             font-weight: 600;
-            margin-bottom: 10px;
+            //margin-bottom: 10px;
         }
 
         & svg {
-            margin-bottom: 5px;
+            //margin-bottom: 5px;
             //transition: margin-bottom 0.4s ease;
             min-width: 45px;
             min-height: 45px;
+            width: 45px;
+            height: 45px;
+            margin-bottom: 0;
+
         }
 
         & svg path {
@@ -153,7 +157,7 @@ body {
 
         .service__description {
             display: flex;
-            margin-bottom: 10px;
+            //margin-bottom: 10px;
             transition: all 0.4s ease;
             font-weight: 600;
             line-height: 1.25;

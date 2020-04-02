@@ -114,24 +114,24 @@ body {
   cursor: pointer;
   padding-top: 5px;
   padding-bottom: 10px;
-  justify-content: center;
+  justify-content: space-around;
 }
 .service:hover .service__heading, .service:focus .service__heading {
   color: #262929;
   font-weight: 600;
-  margin-bottom: 10px;
 }
 .service:hover svg, .service:focus svg {
-  margin-bottom: 5px;
   min-width: 45px;
   min-height: 45px;
+  width: 45px;
+  height: 45px;
+  margin-bottom: 0;
 }
 .service:hover svg path, .service:focus svg path {
   fill: #262929;
 }
 .service:hover .service__description, .service:focus .service__description {
   display: flex;
-  margin-bottom: 10px;
   transition: all 0.4s ease;
   font-weight: 600;
   line-height: 1.25;
