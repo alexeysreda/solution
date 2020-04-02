@@ -95,7 +95,7 @@ body {
 .service {
   position: relative;
   width: 24%;
-  height: 180px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -123,8 +123,8 @@ body {
 }
 .service:hover svg, .service:focus svg {
   margin-bottom: 5px;
-  width: 45px;
-  height: 45px;
+  min-width: 45px;
+  min-height: 45px;
 }
 .service:hover svg path, .service:focus svg path {
   fill: #262929;
@@ -196,15 +196,12 @@ body {
   text-transform: uppercase;
 }
 
-main {
-  padding-bottom: 30px;
-}
-
 .footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+  margin-top: 15px;
 }
 
 .footer__phone, .footer__copyright-and-policy, .footer__address, .footer__developers {

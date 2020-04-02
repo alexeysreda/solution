@@ -108,7 +108,7 @@ body {
 .service {
     position: relative;
     width: 24%;
-    height: 180px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -143,8 +143,8 @@ body {
         & svg {
             margin-bottom: 5px;
             //transition: margin-bottom 0.4s ease;
-            width: 45px;
-            height: 45px;
+            min-width: 45px;
+            min-height: 45px;
         }
 
         & svg path {
@@ -230,15 +230,16 @@ body {
     text-transform: uppercase;
 }
 
-main {
-    padding-bottom: 30px;
-}
+//main {
+//    padding-bottom: 30px;
+//}
 
 .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    margin-top: 15px;
 
 
 
