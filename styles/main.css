@@ -1,6 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poiret+One&display=swap&subset=cyrillic");
 @import "reset.css";
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("fonts/BebasNeue Regular.ttf");
+}
 html, body {
   color: #fff;
   font-size: 20px;
