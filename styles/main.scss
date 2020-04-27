@@ -20,6 +20,10 @@ body {
     background: url('../img/background.jpg');
     background-size: cover;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
 
@@ -87,13 +91,14 @@ body {
 }
 
 .heading__h1 {
-    margin: 50px auto 40px auto;
+    //margin: 50px auto 40px auto;
     font-family: 'Bebas Neue', cursive;
     font-weight: 400;
     font-size: 52px;
     line-height: 52px;
     letter-spacing: 0.08rem;
     text-align: center;
+    margin: 0 auto;
 }
 
 .services {
@@ -243,7 +248,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: 15px;
+    padding-bottom: 15px;
+    //margin-top: 15px;
 
 
 
